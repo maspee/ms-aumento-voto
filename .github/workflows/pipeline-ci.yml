@@ -1,0 +1,24 @@
+name: CI
+
+on:
+ push:
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps: 
+    
+      - uses: actions/checkout@v3
+    
+      - name: Hola Mundo
+        run: |
+          echo "hola mundo"
+          
+      - name: Hola Mundo2
+        run: |
+          echo "hola mundo2"
+
+    
